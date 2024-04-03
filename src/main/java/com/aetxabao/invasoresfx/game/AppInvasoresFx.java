@@ -13,6 +13,7 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.stage.Stage;
 
 import static com.aetxabao.invasoresfx.game.AppConsts.*;
+import static com.aetxabao.invasoresfx.game.enums.EAppStatus.E_APP_PLAYING;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -31,7 +32,7 @@ public class AppInvasoresFx extends Application {
     private static BooleanProperty aPressed = new SimpleBooleanProperty();
     private static BooleanProperty sPressed = new SimpleBooleanProperty();
     private static BooleanProperty dPressed = new SimpleBooleanProperty();
-    private static BooleanProperty shotReleased = new SimpleBooleanProperty();
+    private static BooleanProperty shotPressed = new SimpleBooleanProperty();
 
     private static AppStatus appStatus = new AppStatus();
 
@@ -124,6 +125,9 @@ public class AppInvasoresFx extends Application {
                 case S -> sPressed.set(true);
                 case D -> dPressed.set(true);
             }
+            if(appStatus.getValue() == E_APP_PLAYING){
+                shotPressed.set(true);
+            }
         });
 
         scene.setOnKeyReleased(e -> {
@@ -141,7 +145,7 @@ public class AppInvasoresFx extends Application {
     private static void enterOrSpaceAction() {
         switch (appStatus.getValue()){
             case E_APP_START -> gameManager.start();
-            case E_APP_PLAYING -> shotReleased.set(true);
+            case E_APP_PLAYING -> shotPressed.set(false);
             case E_APP_NEWLEVEL -> gameManager.nextLevel();
             case E_APP_ONELESSLIFE -> gameManager.sameLevel();
             case E_APP_WON, E_APP_LOST -> gameManager.finish();
@@ -179,16 +183,23 @@ public class AppInvasoresFx extends Application {
                 break;
         }
     }
-
+    static int contadorFrame = 0;
     private static void processInput() {
+
         gameManager.getShip().waiting();
         if (wPressed.getValue()) gameManager.getShip().moveUp();
         if (sPressed.getValue()) gameManager.getShip().moveDown();
         if (aPressed.getValue()) gameManager.getShip().moveLeft();
         if (dPressed.getValue()) gameManager.getShip().moveRight();
-        if (shotReleased.getValue()){
-            gameManager.shot();
-            shotReleased.set(false);
+        if (shotPressed.getValue()){
+            if(contadorFrame % 5 == 0){
+                gameManager.shot();
+            }
+            contadorFrame += 1;
+        }
+        else{
+            shotPressed.set(false);
+            contadorFrame = 0;
         }
     }
 
