@@ -124,11 +124,14 @@ public class AppInvasoresFx extends Application {
                 case A -> aPressed.set(true);
                 case S -> sPressed.set(true);
                 case D -> dPressed.set(true);
-            }
-            if(appStatus.getValue() == E_APP_PLAYING){
-                shotPressed.set(true);
+                case ENTER, SPACE -> {
+                    if(appStatus.getValue() == E_APP_PLAYING){
+                        shotPressed.set(true);
+                    }
+                }
             }
         });
+
 
         scene.setOnKeyReleased(e -> {
             switch (e.getCode()){

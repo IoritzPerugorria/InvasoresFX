@@ -92,4 +92,8 @@ public class Ship extends ASprite {
         }
     }
 
+    public int getX(){
+        return this.x;
+    }
+
 }

@@ -3,9 +3,9 @@ package com.aetxabao.invasoresfx.sprite.weaponry;
 import javafx.scene.image.Image;
 
 /**
- * Disparo descendente sin animación
+ * Clase abstracta para diferentes tipos de disparos
  */
-public class Cannonball extends AShot {
+public abstract class Cannonball extends AShot {
 
     // region attributes
     static int ROWS = 1;
@@ -23,5 +23,4 @@ public class Cannonball extends AShot {
         x = x + xSpeed;
         y = y + ySpeed;
     }
-
 }

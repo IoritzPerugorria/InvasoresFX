@@ -24,7 +24,7 @@ public class GameManager {
     // region attributes
     private Rect gameRect;
 
-    private Ship ship;
+    private static Ship ship;
     protected LifesSprite lifesSprite;
     protected List<AShot> shotsUp = new ArrayList<>();
     protected List<AShot> shotsDown = new ArrayList<>();
@@ -96,7 +96,7 @@ public class GameManager {
         return appStatus.getLevel();
     }
 
-    public Ship getShip(){
+    public static Ship getShip(){
         return ship;
     }
 
