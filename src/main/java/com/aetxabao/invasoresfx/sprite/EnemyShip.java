@@ -10,7 +10,7 @@ import static com.aetxabao.invasoresfx.game.AppConsts.*;
 /**
  * Enemigos normales que se desplazan de lado a lado y en los extremos descienden.
  */
-public class EnemyShip extends AEnemy {
+public class EnemyShip extends AEnemy{
 
     int N;//ticks para cambio de frame
     int n;
@@ -56,5 +56,4 @@ public class EnemyShip extends AEnemy {
         gc.drawImage(img, src.left, src.top, src.width(), src.height(),
                 dst.left, dst.top, dst.width(), dst.height());
     }
-
 }

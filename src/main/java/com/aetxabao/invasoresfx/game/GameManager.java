@@ -12,6 +12,7 @@ import com.aetxabao.invasoresfx.util.Rect;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 
 import static com.aetxabao.invasoresfx.game.AppConsts.*;
 import static com.aetxabao.invasoresfx.game.enums.EAppStatus.*;
@@ -126,9 +127,11 @@ public class GameManager {
         //Detección de colisiones de los enemigos con los disparos del protagonista
         for (Iterator<AShot> itBullet = shotsUp.iterator(); itBullet.hasNext(); ) {
             AShot AShot = itBullet.next();
-            for (Iterator<AEnemy> itSprite = enemies.iterator(); itSprite.hasNext(); ) {
+
+            for (Iterator<AEnemy> itSprite = enemies.iterator(); itSprite.hasNext();) {
                 ASprite sprite = itSprite.next();
                 if (AShot.collides(sprite)){
+
                     if (sprite instanceof EnemyShipGroup){
                         List<EnemyShip> enemyShipList = ((EnemyShipGroup) sprite).getEnemyList();
                         for (Iterator<EnemyShip> itEnemy = enemyShipList.iterator(); itEnemy.hasNext(); ) {
@@ -147,18 +150,42 @@ public class GameManager {
                                 break;
                             }
                         }
-                    }else if (sprite instanceof IHaveShield){
+                    }
+
+                    else if (sprite instanceof IHaveShield){
                         temps.add(new SpriteTemp(temps, sprite.getRect().centerX(), sprite.getRect().centerY(),
                                                  EXPLOSION_9_SPRITE_IMAGE, 9));
 //                        if (((EnemyBarrier) sprite).impact()){
 //                            itSprite.remove();
 //                        }
-                    }else{
+                    }
+
+                    else{
                         temps.add(new SpriteTemp(temps, sprite.getRect().centerX(), sprite.getRect().centerY(),
                                                  EXPLOSION_9_SPRITE_IMAGE, 9));
                         itSprite.remove();
                     }
-                    score += AppConsts.PTS_ENEMYSHIP;
+
+                    if (sprite instanceof EnemyBig){
+                        int familia = ((EnemyBig) sprite).getFamilia();
+
+                        for (Iterator<AEnemy> familiares = enemies.iterator(); familiares.hasNext(); ) {
+                            ASprite spriteFamiliar = familiares.next();
+
+                            if (spriteFamiliar instanceof EnemyBig){
+
+                                int familia2 = ((EnemyBig) spriteFamiliar).getFamilia();
+
+                                    if(familia == familia2) {
+                                        Random random = new Random();
+                                        temps.add(new SpriteTemp(temps, spriteFamiliar.getRect().centerX(), spriteFamiliar.getRect().centerY(),
+                                                EXPLOSION_9_SPRITE_IMAGE, 9));
+                                        familiares.remove();
+                                    }
+                            }
+                        }
+                    }
+                    score += PTS_ENEMYSHIP;
                     itBullet.remove();
                     break;
                 }
