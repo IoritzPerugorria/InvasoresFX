@@ -29,9 +29,12 @@ public class GameManager {
     protected LifesSprite lifesSprite;
     protected List<AShot> shotsUp = new ArrayList<>();
     protected List<AShot> shotsDown = new ArrayList<>();
-    protected List<AEnemy> enemies = new ArrayList<>();
+    protected static List<AEnemy> enemies = new ArrayList<>();
     protected List<SpriteTemp> temps = new ArrayList<>();
 
+    public static List<AEnemy> getEnemies(){
+        return enemies;
+    }
     public int score = 0;
     private AppStatus appStatus;
 

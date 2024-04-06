@@ -181,6 +181,7 @@ public class AppInvasoresFx extends Application {
             case E_APP_WON:
                 renderer.drawYouWon();
                 break;
+
             case E_APP_LOST:
                 renderer.drawYouLost();
                 break;

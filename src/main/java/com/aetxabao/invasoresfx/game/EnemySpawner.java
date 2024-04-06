@@ -17,8 +17,8 @@ import static com.aetxabao.invasoresfx.game.enums.EEnemyType.*;
 public class EnemySpawner {
 
     //region attributes
-    public static int n = 18;
-    public static int m = 31;
+    public static int n = 21; //anchura
+    public static int m = 28; //altura
     public static int vx = 5;
     public static int vy = 3;
     public static int ticks = 100;
@@ -48,8 +48,7 @@ public class EnemySpawner {
 
         switch (level){
             case 1:
-                enemies = crearEnemigosNivelHoam(gameRect);
-
+                enemies = crearEnemigosNiveltest(gameRect);
                 break;
             case 2:
                 enemies = crearEnemigosNivelPaquito(gameRect);
@@ -59,6 +58,7 @@ public class EnemySpawner {
                 break;
             default:
                 enemies = crearEnemigosNivelPulpo(gameRect);
+                enemies = crearEnemigosNivelHoam(gameRect);
                 break;
         }
         return enemies;
@@ -168,6 +168,22 @@ public class EnemySpawner {
         enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_bottom, gameRect, 5, 9, vx, 3, E_SHOT_HOAMING, 5));
         enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_top,    gameRect, 11, 8, vx, 0, E_SHOT_HOAMING, 6));
         enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_bottom, gameRect, 11, 9, vx, 3, E_SHOT_HOAMING, 6));
+
+
+        return enemies;
+    }
+
+    public static List<AEnemy> crearEnemigosNiveltest(Rect gameRect) {
+        List<AEnemy> enemies = new ArrayList<>();
+
+
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_test1,    gameRect, 5, 8, vx, 0, E_SHOT_NOTHING, 0));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_test2,    gameRect, 6, 8, vx, 3, E_SHOT_NOTHING, 0));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_test1,    gameRect, 7, 8, vx, 0, E_SHOT_NOTHING, 0));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_test2,    gameRect, 5, 9, vx, 0, E_SHOT_NOTHING, 0));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_test1,    gameRect, 6, 9, vx, 3, E_SHOT_NOTHING, 0));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_test2,    gameRect, 7, 9, vx, 0, E_SHOT_NOTHING, 0));
+
 
 
         return enemies;
