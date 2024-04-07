@@ -22,17 +22,19 @@ public class AppInvasoresFx extends Application {
 
     //region atributtes
     private static GraphicsContext gc;
+
     private static GameManager gameManager;
     private static Rect gameRect;
     private long deltaTime;
 
     private static Renderer renderer;
 
+
     private static BooleanProperty wPressed = new SimpleBooleanProperty();
     private static BooleanProperty aPressed = new SimpleBooleanProperty();
     private static BooleanProperty sPressed = new SimpleBooleanProperty();
     private static BooleanProperty dPressed = new SimpleBooleanProperty();
-    private static BooleanProperty shotPressed = new SimpleBooleanProperty();
+    static BooleanProperty shotPressed = new SimpleBooleanProperty();
 
     private static AppStatus appStatus = new AppStatus();
 
@@ -205,6 +207,10 @@ public class AppInvasoresFx extends Application {
             shotPressed.set(false);
             contadorFrame = 0;
         }
+    }
+
+    public static GraphicsContext getGc(){
+        return gc;
     }
 
 }

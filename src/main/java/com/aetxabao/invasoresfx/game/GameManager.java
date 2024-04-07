@@ -82,6 +82,7 @@ public class GameManager {
         shotsUp.clear();
         shotsDown.clear();
         ship.setInitPos();
+        AppInvasoresFx.shotPressed.set(false);
     }
 
     public void finish(){
@@ -119,7 +120,11 @@ public class GameManager {
                 AShot AShotDown = itShotDown.next();
                 if (AShotUp.collides(AShotDown)) {
                     itShotUp.remove();
-                    itShotDown.remove();
+                    if (itShotDown instanceof IHaveShield){
+                        if(((IHaveShield) itShotDown).impact()){
+                            itShotDown.remove();
+                        }
+                    }
                     temps.add(new SpriteTemp(temps, AShotDown.getRect().centerX(), AShotDown.getRect().centerY(),
                             EXPLOSION_12_SPRITE_IMAGE, 12));
                     break;
@@ -280,9 +285,11 @@ public class GameManager {
             for (int i = 0; i < n; i++) {
                 int j = (int)(Math.random()*shooterEnemies.size());
                 ArrayList<AShot> shots = shooterEnemies.get(j).shoot();
+                if (shooterEnemies.get(j) instanceof EnemyBig){
+                    shots = shooterEnemies.get(j).shoot();
+                }
                 shotsDown.addAll(shots);
             }
         }
     }
-
 }

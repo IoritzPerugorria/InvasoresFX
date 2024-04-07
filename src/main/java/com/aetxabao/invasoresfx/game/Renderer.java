@@ -1,5 +1,6 @@
 package com.aetxabao.invasoresfx.game;
 
+import com.aetxabao.invasoresfx.sprite.AEnemy;
 import com.aetxabao.invasoresfx.sprite.weaponry.AShot;
 import com.aetxabao.invasoresfx.sprite.ASprite;
 import com.aetxabao.invasoresfx.sprite.SpriteTemp;
@@ -12,7 +13,7 @@ import static com.aetxabao.invasoresfx.game.AppConsts.*;
 
 public class Renderer {
 
-    GraphicsContext gc;
+    static GraphicsContext gc;
     GameManager gameManager;
 
     public Renderer(GraphicsContext gc, GameManager gameManager) {
@@ -67,7 +68,7 @@ public class Renderer {
             gameManager.getShip().draw(gc);
         }
         for (ASprite enemy : gameManager.enemies) {
-            enemy.draw(gc);
+            drawSummonedEnemy( enemy);
         }
         for (AShot AShot : gameManager.shotsDown) {
             AShot.draw(gc);
@@ -94,7 +95,10 @@ public class Renderer {
         gc.setFont( FONT_HELVETICA_16 );
         String txt = TXT_LEVEL.substring(0,1).toUpperCase() + TXT_LEVEL.substring(1).toLowerCase();
         gc.fillText( txt + " : " + gameManager.getLevel(), x, y );
+    }
 
+    public static void drawSummonedEnemy(ASprite enemy) {
+        enemy.draw(gc);
     }
 
     public void drawYouWon() {

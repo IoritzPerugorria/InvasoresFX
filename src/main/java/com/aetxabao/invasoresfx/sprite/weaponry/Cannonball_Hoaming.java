@@ -1,7 +1,7 @@
 package com.aetxabao.invasoresfx.sprite.weaponry;
 
 import com.aetxabao.invasoresfx.game.GameManager;
-import com.aetxabao.invasoresfx.sprite.ASprite;
+
 
 import javafx.scene.image.Image;
 
@@ -15,11 +15,13 @@ public class Cannonball_Hoaming extends Cannonball {
     }
 
     public void hoam(){
-        if (this.x < GameManager.getShip().getX()){
-            xSpeed = 2;
-        }
-        else{
-            xSpeed = -2;
-        }
+
+           if (this.x < GameManager.getShip().getX()){
+               xSpeed = 3 ;
+           }
+           else{
+               xSpeed = -3 ;
+           }
+
     }
 }

@@ -29,13 +29,18 @@ public final class AppConsts {
     //region EnemyGenerator
     final static int LEVELS = 3;
     final static int TICKSxFRAME = 3;
-    static final Image ENEMYSHIP_SPRITE_IMAGE_1 = new Image(Main.class.getResource("sprite/ei1.png").toString());
-    static final Image ENEMYSHIP_SPRITE_IMAGE_2 = new Image(Main.class.getResource("sprite/ei2.png").toString());
-    static final Image ENEMYSHIP_SPRITE_IMAGE_3 = new Image(Main.class.getResource("sprite/ei3.png").toString());
-    static final Image ENEMYSHIP_SPRITE_IMAGE_4_top = new Image(Main.class.getResource("sprite/ei4_top.png").toString());
-    static final Image ENEMYSHIP_SPRITE_IMAGE_4_bottom = new Image(Main.class.getResource("sprite/ei4_bottom.png").toString());
-    static final Image ENEMYSHIP_SPRITE_IMAGE_test1 = new Image(Main.class.getResource("sprite/1.png").toString());
-    static final Image ENEMYSHIP_SPRITE_IMAGE_test2 = new Image(Main.class.getResource("sprite/2.png").toString());
+    public static final Image ENEMYSHIP_SPRITE_IMAGE_1 = new Image(Main.class.getResource("sprite/ei1.png").toString());
+    public static final Image ENEMYSHIP_SPRITE_IMAGE_2 = new Image(Main.class.getResource("sprite/ei2.png").toString());
+    public static final Image ENEMYSHIP_SPRITE_IMAGE_3 = new Image(Main.class.getResource("sprite/ei3.png").toString());
+    public static final Image ENEMYSHIP_SPRITE_IMAGE_4_top = new Image(Main.class.getResource("sprite/ei4_top.png").toString());
+    public static final Image ENEMYSHIP_SPRITE_IMAGE_4_bottom = new Image(Main.class.getResource("sprite/ei4_bottom.png").toString());
+    public static final Image ENEMYSHIP_SPRITE_IMAGE_5_left = new Image(Main.class.getResource("sprite/ei5_left.png").toString());
+    public static final Image ENEMYSHIP_SPRITE_IMAGE_5_middle = new Image(Main.class.getResource("sprite/ei5_middle.png").toString());
+    public static final Image ENEMYSHIP_SPRITE_IMAGE_5_right = new Image(Main.class.getResource("sprite/ei5_right.png").toString());
+
+
+    static final Image ENEMYSHIP_SPRITE_IMAGE_test1 = new Image(Main.class.getResource("sprite/test_grid.png").toString());
+    static final Image ENEMYSHIP_SPRITE_IMAGE_test2 = new Image(Main.class.getResource("sprite/test_grid.png").toString());
     static final Image ENEMYSHIP_SPRITE_IMAGE_test3 = new Image(Main.class.getResource("sprite/41wbi9.jpg").toString());
     static final Image ENEMYBARRIER4_SPRITE_IMAGE = new Image(Main.class.getResource("sprite/barrier4.png").toString());
     static final Image ENEMYTOWER3_SPRITE_IMAGE = new Image(Main.class.getResource("sprite/tower3.png").toString());
@@ -71,6 +76,7 @@ public final class AppConsts {
 
     //region Gun
     public static final Image BALL_SPRITE_IMAGE = new Image(Main.class.getResource("sprite/ball.png").toString());
+    public static final Image BALL_HOAM_SPRITE_IMAGE = new Image(Main.class.getResource("sprite/ball-hoam.png").toString());
     //endregion
 
     //region Ship
