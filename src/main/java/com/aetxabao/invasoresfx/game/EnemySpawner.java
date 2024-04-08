@@ -97,6 +97,9 @@ public class EnemySpawner {
         else if (shot == E_SHOT_HOAMING){
             e.setWeapon(new Gun(1));
         }
+        else if (shot == E_SHOT_HEALTH){
+            e.setWeapon(new Gun(2));
+        }
         e.setPos(getX(gameRect, i), getY(gameRect, j));
         e.setXSpeed(vx);
         e.setYSpeed(vy);
@@ -181,9 +184,9 @@ public class EnemySpawner {
     public static List<AEnemy> crearEnemigosNiveltest(Rect gameRect) {
         List<AEnemy> enemies = new ArrayList<>();
 
-        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_left,    gameRect, 5, 2, vx, 0, E_SHOT_HOAMING, 1));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_left,    gameRect, 5, 2, vx, 0, E_SHOT_HEALTH, 1));
         enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_middle,    gameRect, 6, 2, vx, 0, E_SHOT_NOTHING, 1));
-        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_right,    gameRect, 7, 2, vx, 0, E_SHOT_HOAMING, 1));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_right,    gameRect, 7, 2, vx, 0, E_SHOT_HEALTH, 1));
 
 
 

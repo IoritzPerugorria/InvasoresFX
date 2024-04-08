@@ -76,7 +76,8 @@ public final class AppConsts {
 
     //region Gun
     public static final Image BALL_SPRITE_IMAGE = new Image(Main.class.getResource("sprite/ball.png").toString());
-    public static final Image BALL_HOAM_SPRITE_IMAGE = new Image(Main.class.getResource("sprite/ball-hoam.png").toString());
+    public static final Image BALL_HOAM_SPRITE_IMAGE = new Image(Main.class.getResource("sprite/ball_hoam.png").toString());
+    public static final Image BALL_HEALTH_SPRITE_IMAGE = new Image(Main.class.getResource("sprite/ball_health.png").toString());
     //endregion
 
     //region Ship

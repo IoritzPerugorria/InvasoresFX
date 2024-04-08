@@ -1,5 +1,4 @@
 package com.aetxabao.invasoresfx.sprite.weaponry;
-
 import com.aetxabao.invasoresfx.sprite.IHaveShield;
 import javafx.scene.image.Image;
 
@@ -16,7 +15,7 @@ public class Cannonball_Health extends Cannonball implements IHaveShield {
 
     @Override
     public boolean impact() {
-        health --;
+        health = health - 1;
         return health <= 0;
     }
 }

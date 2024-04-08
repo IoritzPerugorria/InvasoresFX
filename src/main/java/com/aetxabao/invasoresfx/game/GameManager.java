@@ -120,13 +120,22 @@ public class GameManager {
                 AShot AShotDown = itShotDown.next();
                 if (AShotUp.collides(AShotDown)) {
                     itShotUp.remove();
-                    if (itShotDown instanceof IHaveShield){
-                        if(((IHaveShield) itShotDown).impact()){
+
+                    if (AShotDown instanceof IHaveShield){
+                        if(((IHaveShield) AShotDown).impact()){
+                            temps.add(new SpriteTemp(temps, AShotDown.getRect().centerX(), AShotDown.getRect().centerY(),
+                                    EXPLOSION_12_SPRITE_IMAGE, 12));
                             itShotDown.remove();
                         }
                     }
+                    else{
+                        temps.add(new SpriteTemp(temps, AShotDown.getRect().centerX(), AShotDown.getRect().centerY(),
+                                EXPLOSION_12_SPRITE_IMAGE, 12));
+                        itShotDown.remove();
+                    }
                     temps.add(new SpriteTemp(temps, AShotDown.getRect().centerX(), AShotDown.getRect().centerY(),
                             EXPLOSION_12_SPRITE_IMAGE, 12));
+
                     break;
                 }
             }
