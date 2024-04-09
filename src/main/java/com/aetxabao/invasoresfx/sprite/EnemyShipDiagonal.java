@@ -4,7 +4,7 @@ import com.aetxabao.invasoresfx.util.Rect;
 import javafx.scene.image.Image;
 import org.apache.log4j.Logger;
 
-public class EnemyShipDiagonal extends EnemyShip {
+public class EnemyShipDiagonal extends EnemyShip implements IHaveShield {
     private static Logger log = Logger.getLogger(EnemyShipDiagonal.class);
     public EnemyShipDiagonal(Rect gameRect, Image img, int N, int health) {
         super(gameRect, img, N, health);

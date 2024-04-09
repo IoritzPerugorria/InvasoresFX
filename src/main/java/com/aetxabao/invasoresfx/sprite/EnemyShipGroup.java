@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Los enemigos se desplazan como un conjunto
  */
-public class EnemyShipGroup extends EnemyShip {
+public class EnemyShipGroup extends EnemyShip implements IHaveShield {
 
     List<EnemyShip> group;
 

@@ -217,6 +217,9 @@ public class GameManager {
         if (ship.isAlive()) {
             ship.update();
         }
+        else{
+            AppInvasoresFx.shotPressed.set(false);
+        }
         //Actualización de los sprites temporales
         for (int i=temps.size()-1;i>=0;i--) {
             temps.get(i).update();

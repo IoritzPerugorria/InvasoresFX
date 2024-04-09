@@ -4,7 +4,7 @@ import com.aetxabao.invasoresfx.game.GameManager;
 import com.aetxabao.invasoresfx.util.Rect;
 import javafx.scene.image.Image;
 
-public class EnemyBig extends EnemyShip{
+public class EnemyBig extends EnemyShip implements IHaveShield{
 
     int familia;
 
