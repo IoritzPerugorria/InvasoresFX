@@ -14,6 +14,7 @@ import javafx.stage.Stage;
 
 import static com.aetxabao.invasoresfx.game.AppConsts.*;
 import static com.aetxabao.invasoresfx.game.enums.EAppStatus.E_APP_PLAYING;
+import static com.aetxabao.invasoresfx.game.enums.EAppStatus.E_APP_START;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -129,6 +130,42 @@ public class AppInvasoresFx extends Application {
                 case ENTER, SPACE -> {
                     if(appStatus.getValue() == E_APP_PLAYING){
                         shotPressed.set(true);
+                    }
+                }
+                case H -> {
+                    if(appStatus.getValue() == E_APP_START) {
+                        hardmode = true;
+                        gameManager.start();
+                    }
+                }
+                case DIGIT1 -> {
+                    if(appStatus.getValue() == E_APP_START){
+                        appStatus.setLevel(1);
+                        gameManager.start();
+                    }
+                }
+                case DIGIT2 -> {
+                    if(appStatus.getValue() == E_APP_START){
+                        appStatus.setLevel(2);
+                        gameManager.start();
+                    }
+                }
+                case DIGIT3 -> {
+                    if(appStatus.getValue() == E_APP_START){
+                        appStatus.setLevel(3);
+                        gameManager.start();
+                    }
+                }
+                case DIGIT4 -> {
+                    if(appStatus.getValue() == E_APP_START){
+                        appStatus.setLevel(4);
+                        gameManager.start();
+                    }
+                }
+                case DIGIT5 -> {
+                    if(appStatus.getValue() == E_APP_START){
+                        appStatus.setLevel(5);
+                        gameManager.start();
                     }
                 }
             }

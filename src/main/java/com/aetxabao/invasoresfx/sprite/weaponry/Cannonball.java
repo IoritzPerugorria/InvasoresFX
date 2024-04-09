@@ -2,6 +2,8 @@ package com.aetxabao.invasoresfx.sprite.weaponry;
 
 import javafx.scene.image.Image;
 
+import static com.aetxabao.invasoresfx.game.AppConsts.hardmode;
+
 /**
  * Clase abstracta para diferentes tipos de disparos
  */
@@ -16,7 +18,12 @@ public abstract class Cannonball extends AShot {
     public Cannonball(Image img) {
         super(img,ROWS,COLS);
         xSpeed = 0;
-        ySpeed = MAX_SPEED;
+        if(hardmode){
+            ySpeed = MAX_SPEED * 2;
+        }
+        else{
+            ySpeed = MAX_SPEED;
+        }
     }
 
     public void update() {

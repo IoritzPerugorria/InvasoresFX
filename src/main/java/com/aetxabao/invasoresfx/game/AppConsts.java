@@ -9,6 +9,8 @@ import java.net.URL;
 
 public final class AppConsts {
 
+    public static boolean hardmode = false;
+
     //region Logs
     public static final URL LOG4J_PROPERTIES = Main.class.getResource("log4j.properties");
     public static final String SYSTEM_PROPERTY = "userApp.userName";
@@ -27,7 +29,7 @@ public final class AppConsts {
     //endregion
 
     //region EnemyGenerator
-    final static int LEVELS = 3;
+    final static int LEVELS = 5;
     final static int TICKSxFRAME = 3;
     public static final Image ENEMYSHIP_SPRITE_IMAGE_1 = new Image(Main.class.getResource("sprite/ei1.png").toString());
     public static final Image ENEMYSHIP_SPRITE_IMAGE_2 = new Image(Main.class.getResource("sprite/ei2.png").toString());
@@ -63,7 +65,7 @@ public final class AppConsts {
     static final double MARGIN_TOP = 20.0;//see BOARD_MARGIN_TOP
     static final String TXT_YOU_CAN = "Tú puedes";
     static final String TXT_PRESS_ENTER = "Pulsa ENTER";
-    static final String TXT_TO_START = "para empezar";
+    static final String TXT_TO_START = "para empezar\n Pulsa H para\nmodo Dificil";
     static final String TXT_TO_CONTINUE = "para continuar";
     static final String TXT_YOU_WON = "GANASTE";
     static final String TXT_YOU_LOST = "PERDISTE";

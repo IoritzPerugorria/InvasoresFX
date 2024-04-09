@@ -46,7 +46,6 @@ public class AppStatus {
 
     public void start() {
         value = E_APP_PLAYING;
-        level = INIT_LEVEL;
         lifes = INIT_LIFES;
     }
 

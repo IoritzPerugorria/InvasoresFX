@@ -12,7 +12,7 @@ import com.aetxabao.invasoresfx.util.Rect;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Random;
+
 
 import static com.aetxabao.invasoresfx.game.AppConsts.*;
 import static com.aetxabao.invasoresfx.game.enums.EAppStatus.*;
@@ -157,7 +157,7 @@ public class GameManager {
                                 temps.add(new SpriteTemp(temps, enemyShip.getRect().centerX(), enemyShip.getRect().centerY(),
                                                          EXPLOSION_9_SPRITE_IMAGE, 9));
                                 itEnemy.remove();
-                                if (enemyShipList.size()==0){
+                                if (enemyShipList.isEmpty()){
                                     itSprite.remove();
                                 }else{
                                     ((EnemyShipGroup) sprite).setXY();
@@ -170,11 +170,11 @@ public class GameManager {
                     }
 
                     else if (sprite instanceof IHaveShield){
-                        temps.add(new SpriteTemp(temps, sprite.getRect().centerX(), sprite.getRect().centerY(),
-                                                 EXPLOSION_9_SPRITE_IMAGE, 9));
-//                        if (((EnemyBarrier) sprite).impact()){
-//                            itSprite.remove();
-//                        }
+                        if(((IHaveShield) sprite).impact()){
+                            temps.add(new SpriteTemp(temps, sprite.getRect().centerX(), sprite.getRect().centerY(),
+                                EXPLOSION_9_SPRITE_IMAGE, 9));
+                            itSprite.remove();
+                        }
                     }
 
                     else{
@@ -194,7 +194,6 @@ public class GameManager {
                                 int familia2 = ((EnemyBig) spriteFamiliar).getFamilia();
 
                                     if(familia == familia2) {
-                                        Random random = new Random();
                                         temps.add(new SpriteTemp(temps, spriteFamiliar.getRect().centerX(), spriteFamiliar.getRect().centerY(),
                                                 EXPLOSION_9_SPRITE_IMAGE, 9));
                                         familiares.remove();
@@ -237,7 +236,7 @@ public class GameManager {
         }
         enemies.addAll(newList);
         //Comprobación del estado de la partida
-        if (!ship.isAlive()&&(temps.size()==0)){
+        if (!ship.isAlive()&&(temps.isEmpty())){
             appStatus.oneLessLife();
             if (appStatus.getValue() == E_APP_LOST){
                 log.debug("updateGame E_APP_LOST enemies=" + enemies.size() + " shotsDown=" + shotsDown.size() + " shotsUp=" + shotsUp.size());
@@ -247,7 +246,7 @@ public class GameManager {
             return;
         }
         //Comprobación del estado de la partida
-        if ((enemies.size()==0)&&(temps.size()==0)){
+        if ((enemies.isEmpty())&&(temps.isEmpty())){
             appStatus.newLevel();
             score += PTS_NEWLEVEL;
             return;
@@ -290,7 +289,7 @@ public class GameManager {
                 shooterEnemies.add(enemy);
             }
         }
-        if (shooterEnemies.size()>0){
+        if (!shooterEnemies.isEmpty()){
             for (int i = 0; i < n; i++) {
                 int j = (int)(Math.random()*shooterEnemies.size());
                 ArrayList<AShot> shots = shooterEnemies.get(j).shoot();

@@ -12,8 +12,8 @@ public class EnemyShipGroup extends EnemyShip {
 
     List<EnemyShip> group;
 
-    public EnemyShipGroup(Rect gameRect, List<EnemyShip> enemies) {
-        super(gameRect, null, 1);
+    public EnemyShipGroup(Rect gameRect, List<EnemyShip> enemies, int health) {
+        super(gameRect, null, 1, health);
         group = enemies;
         setXY();
         setWidth();

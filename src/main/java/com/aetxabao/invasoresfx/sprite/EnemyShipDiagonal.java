@@ -6,8 +6,8 @@ import org.apache.log4j.Logger;
 
 public class EnemyShipDiagonal extends EnemyShip {
     private static Logger log = Logger.getLogger(EnemyShipDiagonal.class);
-    public EnemyShipDiagonal(Rect gameRect, Image img, int N) {
-        super(gameRect, img, N);
+    public EnemyShipDiagonal(Rect gameRect, Image img, int N, int health) {
+        super(gameRect, img, N, health);
         log.debug("EnemyShipDiagonal N="+N);
     }
 

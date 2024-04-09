@@ -10,19 +10,21 @@ import static com.aetxabao.invasoresfx.game.AppConsts.*;
 /**
  * Enemigos normales que se desplazan de lado a lado y en los extremos descienden.
  */
-public class EnemyShip extends AEnemy{
+public class EnemyShip extends AEnemy implements IHaveShield{
 
+    int health;
     int N;//ticks para cambio de frame
     int n;
     Rect gameRect;
 
-    public EnemyShip(Rect gameRect, Image img, int N) {
+    public EnemyShip(Rect gameRect, Image img, int N, int health) {
         super(img, ENEMYSHIP_ROWS, ENEMYSHIP_COLS);
         this.gameRect = gameRect;
         xSpeed = ENEMYSHIP_MAX_SPEED;
         x = gameRect.left+width/2;
         this.N = N;
         this.n = 0;
+        this.health = health;
     }
 
     public void updateFrame(){
@@ -55,5 +57,12 @@ public class EnemyShip extends AEnemy{
         Rect dst = new Rect(x, y, (int)(x + ENEMYSHIP_ALFA * width), (int)(y + ENEMYSHIP_ALFA * height));
         gc.drawImage(img, src.left, src.top, src.width(), src.height(),
                 dst.left, dst.top, dst.width(), dst.height());
+    }
+
+
+    @Override
+    public boolean impact() {
+        health = health - 1;
+        return health <= 0;
     }
 }
