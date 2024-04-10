@@ -22,6 +22,7 @@ public class EnemyBBB extends EnemyShip implements ICanSpawn{
     @Override
     public List<AEnemy> spawn(){
         Random random = new Random();
+        int xPosicion = (random.nextInt(15) + 3);
         contadorFrame ++;
         ArrayList<AEnemy> enemigos = new ArrayList<>();
 
@@ -29,12 +30,12 @@ public class EnemyBBB extends EnemyShip implements ICanSpawn{
             switch (random.nextInt(4)){
                 case 0 -> {
                     enemigos.add(new EnemyShip(gameRect, ENEMYSHIP_SPRITE_IMAGE_1, n, 0));
-                    enemigos.getFirst().setPos(gameRect.left + 8 * gameRect.width()/ 22, gameRect.top + 8*gameRect.height()/ 28);
+                    enemigos.getFirst().setPos(gameRect.left + xPosicion * gameRect.width()/ 22, gameRect.top + 8*gameRect.height()/ 28);
                     enemigos.getFirst().setWeapon(new Gun(0));
                 }
                 case 1 -> {
                     enemigos.add(new EnemyShipDiagonal(gameRect, ENEMYSHIP_SPRITE_IMAGE_2, n, 0));
-                    enemigos.getFirst().setPos(gameRect.left + 8 * gameRect.width()/ 22, gameRect.top + 8*gameRect.height()/ 28);
+                    enemigos.getFirst().setPos(gameRect.left + xPosicion * gameRect.width()/ 22, gameRect.top + 8*gameRect.height()/ 28);
                     enemigos.getFirst().setWeapon(new Gun(0));
                     enemigos.getFirst().setYSpeed(3);
                 }
@@ -42,19 +43,20 @@ public class EnemyBBB extends EnemyShip implements ICanSpawn{
                     enemigos.add(new EnemyBigRaw(gameRect, ENEMYSHIP_SPRITE_IMAGE_4_top, n,numFamiliar, 0));
                     enemigos.add(new EnemyBigRaw(gameRect, ENEMYSHIP_SPRITE_IMAGE_4_bottom, n,numFamiliar, 0));
                     enemigos.getLast().setWeapon(new Gun(1));
-                    enemigos.getFirst().setPos(gameRect.left + 8 * gameRect.width()/ 22, gameRect.top + 8*gameRect.height()/ 28);
-                    enemigos.getLast().setPos(gameRect.left + 8 * gameRect.width()/ 22, (gameRect.top + 9*gameRect.height()/ 28));
+                    enemigos.getFirst().setPos(gameRect.left + xPosicion * gameRect.width()/ 22, gameRect.top + 8*gameRect.height()/ 28);
+                    enemigos.getLast().setPos(gameRect.left + xPosicion * gameRect.width()/ 22, (gameRect.top + 9*gameRect.height()/ 28));
                     numFamiliar ++;
-
-                }
-                case 3 ->{
-                    enemigos.add(new EnemyShip(gameRect, ENEMYSHIP_SPRITE_IMAGE_1, n, 0));
-
                 }
 
                 default -> {
-                    enemigos.add(new EnemyShip(gameRect, ENEMYSHIP_SPRITE_IMAGE_1, n, 0));
-
+                    enemigos.add(new EnemyBigRaw(gameRect, ENEMYSHIP_SPRITE_IMAGE_5_left, n,numFamiliar, 0));
+                    enemigos.add(new EnemyBigRaw(gameRect, ENEMYSHIP_SPRITE_IMAGE_5_middle, n,numFamiliar, 0));
+                    enemigos.add(new EnemyBigRaw(gameRect, ENEMYSHIP_SPRITE_IMAGE_5_right, n,numFamiliar, 0));
+                    enemigos.getLast().setWeapon(new Gun(2));
+                    enemigos.getFirst().setPos(gameRect.left + (xPosicion - 1) * gameRect.width()/ 22, gameRect.top + 8 * gameRect.height()/ 28);
+                    enemigos.get(1).setPos(gameRect.left + (xPosicion) * gameRect.width()/ 22, gameRect.top + 8 * gameRect.height()/ 28);
+                    enemigos.getLast().setPos(gameRect.left + (xPosicion + 1) * gameRect.width()/ 22, (gameRect.top + 8 * gameRect.height()/ 28));
+                    numFamiliar ++;
                 }
             }
 
