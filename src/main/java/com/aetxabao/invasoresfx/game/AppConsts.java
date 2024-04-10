@@ -22,7 +22,7 @@ public final class AppConsts {
     public static final int BOARD_MARGIN_TOP = 30;
     static final int BOARD_WIDTH = 240*2;
     static final int BOARD_HEIGHT = 337*2 - BOARD_MARGIN_TOP;
-    static final double GAME_SPEED = 30;//steps per second
+    public static final double GAME_SPEED = 30;//steps per second
     static final Image ICON_16 = new Image(Main.class.getResource("icon/icon16.png").toString());
     static final Image ICON_32 = new Image(Main.class.getResource("icon/icon32.png").toString());
     static final Image ICON_64 = new Image(Main.class.getResource("icon/icon64.png").toString());
@@ -59,6 +59,8 @@ public final class AppConsts {
     static final Image LIFES_SPRITE_IMAGE = new Image(Main.class.getResource("sprite/lifes.png").toString());
     static final Image LASER_SPRITE_IMAGE = new Image(Main.class.getResource("sprite/laser.png").toString());
     static final Image EXPLOSION_9_SPRITE_IMAGE = new Image(Main.class.getResource("sprite/explo9.png").toString());
+    static final Image EXPLOSION_BOSS_SPRITE_IMAGE = new Image(Main.class.getResource("sprite/exploBoss.png").toString());
+
     static final Image EXPLOSION_12_SPRITE_IMAGE = new Image(Main.class.getResource("sprite/explo12.png").toString());
     //endregion
 
@@ -107,11 +109,11 @@ public final class AppConsts {
     public static final double LIFES_ALFA = 0.75;
     //endregion
 
-    static final File shotSFX = new File("C:/Users/iorit/IdeaProjects/InvasoresFX/target/classes/com/aetxabao/invasoresfx/audio/shot.wav");
-    static final File explosionSFX = new File("C:/Users/iorit/IdeaProjects/InvasoresFX/target/classes/com/aetxabao/invasoresfx/audio/deltarune-explosion.wav");
-    static final File clearSFX = new File("C:/Users/iorit/IdeaProjects/InvasoresFX/target/classes/com/aetxabao/invasoresfx/audio/MGClear00.wav");
-    static final File shieldHitSFX = new File("C:/Users/iorit/IdeaProjects/InvasoresFX/target/classes/com/aetxabao/invasoresfx/audio/impact.wav");
-    static final File enemydedSFX = new File("C:/Users/iorit/IdeaProjects/InvasoresFX/target/classes/com/aetxabao/invasoresfx/audio/enemyDed.wav");
+    static final File shotSFX = new File(("src/main/resources/com/aetxabao/invasoresfx/audio/shot.wav"));
+    static final File explosionSFX = new File(("src/main/resources/com/aetxabao/invasoresfx/audio/deltarune-explosion.wav"));
+    static final File clearSFX = new File(("src/main/resources/com/aetxabao/invasoresfx/audio/MGClear00.wav"));
+    static final File shieldHitSFX = new File(("src/main/resources/com/aetxabao/invasoresfx/audio/impact.wav"));
+    static final File enemydedSFX = new File(("src/main/resources/com/aetxabao/invasoresfx/audio/enemyDed.wav"));
 
 
 

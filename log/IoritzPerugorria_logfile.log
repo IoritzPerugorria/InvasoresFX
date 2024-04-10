@@ -354,3 +354,337 @@
 [2024-04-10 13:32:52] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=1
 [2024-04-10 13:33:36] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
 [2024-04-10 13:33:38] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:01:48] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 22:01:52] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:02:12] [DEBUG] [GameManager: 67] nextLevel level=2
+[2024-04-10 22:03:48] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 22:03:49] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:03:55] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=5
+[2024-04-10 22:03:58] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=4
+[2024-04-10 22:04:03] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=2
+[2024-04-10 22:04:06] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=1
+[2024-04-10 22:04:15] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=4
+[2024-04-10 22:04:20] [DEBUG] [GameManager: 67] nextLevel level=2
+[2024-04-10 22:04:57] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 22:04:59] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:05:07] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=4
+[2024-04-10 22:05:28] [DEBUG] [GameManager:273] updateGame E_APP_ONELESSLIFE enemies=1 shotsDown=3 shotsUp=2
+[2024-04-10 22:06:02] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 22:06:03] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:06:11] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=1
+[2024-04-10 22:06:23] [DEBUG] [GameManager:273] updateGame E_APP_ONELESSLIFE enemies=4 shotsDown=3 shotsUp=1
+[2024-04-10 22:06:23] [DEBUG] [GameManager: 75] sameLevel level=1
+[2024-04-10 22:06:24] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=4
+[2024-04-10 22:06:37] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=1
+[2024-04-10 22:07:05] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 22:07:06] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:07:08] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=0
+[2024-04-10 22:07:08] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=0
+[2024-04-10 22:07:30] [DEBUG] [GameManager:273] updateGame E_APP_ONELESSLIFE enemies=8 shotsDown=3 shotsUp=0
+[2024-04-10 22:07:30] [DEBUG] [GameManager: 75] sameLevel level=1
+[2024-04-10 22:07:36] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=4
+[2024-04-10 22:07:36] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=4
+[2024-04-10 22:07:37] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:07:37] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:08:30] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 22:08:31] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:08:35] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=4
+[2024-04-10 22:08:35] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=4
+[2024-04-10 22:08:43] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=4
+[2024-04-10 22:08:43] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=4
+[2024-04-10 22:08:45] [DEBUG] [GameManager:273] updateGame E_APP_ONELESSLIFE enemies=8 shotsDown=2 shotsUp=0
+[2024-04-10 22:10:25] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 22:10:26] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:10:35] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:10:39] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:10:47] [DEBUG] [GameManager:273] updateGame E_APP_ONELESSLIFE enemies=4 shotsDown=1 shotsUp=0
+[2024-04-10 22:13:32] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 22:13:34] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:13:41] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:13:44] [DEBUG] [GameManager:278] updateGame E_APP_ONELESSLIFE enemies=3 shotsDown=3 shotsUp=0
+[2024-04-10 22:13:44] [DEBUG] [GameManager: 75] sameLevel level=1
+[2024-04-10 22:13:48] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:13:50] [DEBUG] [GameManager:278] updateGame E_APP_ONELESSLIFE enemies=1 shotsDown=2 shotsUp=1
+[2024-04-10 22:13:50] [DEBUG] [GameManager: 75] sameLevel level=1
+[2024-04-10 22:13:55] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:14:02] [DEBUG] [GameManager:276] updateGame E_APP_LOST enemies=1 shotsDown=1 shotsUp=1
+[2024-04-10 22:14:03] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:14:05] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:14:10] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:14:13] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:14:14] [DEBUG] [GameManager:278] updateGame E_APP_ONELESSLIFE enemies=2 shotsDown=2 shotsUp=0
+[2024-04-10 22:14:14] [DEBUG] [GameManager: 75] sameLevel level=1
+[2024-04-10 22:14:15] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:14:18] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:14:19] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:14:23] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:14:24] [DEBUG] [GameManager:278] updateGame E_APP_ONELESSLIFE enemies=2 shotsDown=4 shotsUp=3
+[2024-04-10 22:14:24] [DEBUG] [GameManager: 75] sameLevel level=1
+[2024-04-10 22:14:27] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:14:31] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:17:04] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 22:17:06] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:17:08] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:17:10] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:17:13] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:17:23] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:18:26] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 22:18:28] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:18:43] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 22:18:45] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:19:42] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 22:19:43] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:21:06] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 22:21:07] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:21:09] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:21:10] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:21:21] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 22:21:22] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:21:25] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:21:27] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:26:07] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 22:26:08] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:26:11] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:26:56] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 22:26:57] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:27:00] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:39:23] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 22:39:25] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:39:34] [DEBUG] [GameManager: 67] nextLevel level=2
+[2024-04-10 22:39:44] [DEBUG] [GameManager: 67] nextLevel level=3
+[2024-04-10 22:39:44] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:39:44] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:39:44] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:39:44] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:39:55] [DEBUG] [GameManager: 67] nextLevel level=4
+[2024-04-10 22:39:55] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5c988e30
+[2024-04-10 22:39:55] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5f0d0fa8
+[2024-04-10 22:39:55] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5c988e30
+[2024-04-10 22:39:55] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5f0d0fa8
+[2024-04-10 22:39:55] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5c988e30
+[2024-04-10 22:39:55] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5f0d0fa8
+[2024-04-10 22:39:55] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5c988e30
+[2024-04-10 22:39:55] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5f0d0fa8
+[2024-04-10 22:39:55] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5c988e30
+[2024-04-10 22:39:55] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5f0d0fa8
+[2024-04-10 22:39:55] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5c988e30
+[2024-04-10 22:39:55] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5f0d0fa8
+[2024-04-10 22:39:55] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@3cfdad93
+[2024-04-10 22:39:55] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2d71e1a6
+[2024-04-10 22:39:55] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@35801336
+[2024-04-10 22:39:55] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@3cfdad93
+[2024-04-10 22:39:55] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2d71e1a6
+[2024-04-10 22:39:55] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@35801336
+[2024-04-10 22:40:12] [DEBUG] [GameManager: 67] nextLevel level=5
+[2024-04-10 22:40:13] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5c988e30
+[2024-04-10 22:40:13] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5f0d0fa8
+[2024-04-10 22:40:14] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:40:15] [DEBUG] [GameManager:290] updateGame E_APP_ONELESSLIFE enemies=2 shotsDown=4 shotsUp=0
+[2024-04-10 22:40:15] [DEBUG] [GameManager: 75] sameLevel level=5
+[2024-04-10 22:40:16] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5c988e30
+[2024-04-10 22:40:16] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5f0d0fa8
+[2024-04-10 22:40:18] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@3cfdad93
+[2024-04-10 22:40:18] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2d71e1a6
+[2024-04-10 22:40:18] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@35801336
+[2024-04-10 22:40:19] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@3cfdad93
+[2024-04-10 22:40:19] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2d71e1a6
+[2024-04-10 22:40:19] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@35801336
+[2024-04-10 22:40:20] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5c988e30
+[2024-04-10 22:40:20] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5f0d0fa8
+[2024-04-10 22:40:22] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@3cfdad93
+[2024-04-10 22:40:22] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2d71e1a6
+[2024-04-10 22:40:22] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@35801336
+[2024-04-10 22:40:23] [DEBUG] [GameManager:290] updateGame E_APP_ONELESSLIFE enemies=9 shotsDown=1 shotsUp=1
+[2024-04-10 22:40:24] [DEBUG] [GameManager: 75] sameLevel level=5
+[2024-04-10 22:40:24] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5c988e30
+[2024-04-10 22:40:24] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5f0d0fa8
+[2024-04-10 22:40:25] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@3cfdad93
+[2024-04-10 22:40:25] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2d71e1a6
+[2024-04-10 22:40:25] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@35801336
+[2024-04-10 22:40:27] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5c988e30
+[2024-04-10 22:40:27] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5f0d0fa8
+[2024-04-10 22:40:28] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@3cfdad93
+[2024-04-10 22:40:28] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2d71e1a6
+[2024-04-10 22:40:28] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@35801336
+[2024-04-10 22:40:29] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@3cfdad93
+[2024-04-10 22:40:29] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2d71e1a6
+[2024-04-10 22:40:29] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@35801336
+[2024-04-10 22:40:31] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@3cfdad93
+[2024-04-10 22:40:31] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2d71e1a6
+[2024-04-10 22:40:31] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@35801336
+[2024-04-10 22:40:34] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:40:35] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@3cfdad93
+[2024-04-10 22:40:35] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2d71e1a6
+[2024-04-10 22:40:35] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@35801336
+[2024-04-10 22:40:36] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@3cfdad93
+[2024-04-10 22:40:36] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2d71e1a6
+[2024-04-10 22:40:36] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@35801336
+[2024-04-10 22:40:38] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:40:39] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5c988e30
+[2024-04-10 22:40:39] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5f0d0fa8
+[2024-04-10 22:40:44] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@3cfdad93
+[2024-04-10 22:40:44] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2d71e1a6
+[2024-04-10 22:40:44] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@35801336
+[2024-04-10 22:40:45] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@3cfdad93
+[2024-04-10 22:40:45] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2d71e1a6
+[2024-04-10 22:40:45] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@35801336
+[2024-04-10 22:40:46] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5c988e30
+[2024-04-10 22:40:46] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@5f0d0fa8
+[2024-04-10 22:40:47] [DEBUG] [GameManager: 67] nextLevel level=6
+[2024-04-10 22:40:59] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 22:41:00] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 22:41:11] [DEBUG] [GameManager: 67] nextLevel level=2
+[2024-04-10 22:41:31] [DEBUG] [GameManager:290] updateGame E_APP_ONELESSLIFE enemies=1 shotsDown=2 shotsUp=2
+[2024-04-10 22:41:31] [DEBUG] [GameManager: 75] sameLevel level=2
+[2024-04-10 22:41:33] [DEBUG] [GameManager: 67] nextLevel level=3
+[2024-04-10 22:41:33] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:41:33] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:41:33] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:41:33] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:41:48] [DEBUG] [GameManager: 67] nextLevel level=4
+[2024-04-10 22:41:48] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:41:48] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:41:48] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:41:48] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:41:48] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:41:48] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:41:48] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:41:48] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:41:48] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:41:48] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:41:48] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:41:48] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:41:48] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2964575a
+[2024-04-10 22:41:48] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6bcdd2d0
+[2024-04-10 22:41:48] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6d62b73f
+[2024-04-10 22:41:48] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2964575a
+[2024-04-10 22:41:48] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6bcdd2d0
+[2024-04-10 22:41:48] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6d62b73f
+[2024-04-10 22:41:51] [DEBUG] [GameManager:290] updateGame E_APP_ONELESSLIFE enemies=18 shotsDown=8 shotsUp=5
+[2024-04-10 22:41:51] [DEBUG] [GameManager: 75] sameLevel level=4
+[2024-04-10 22:42:01] [DEBUG] [GameManager:288] updateGame E_APP_LOST enemies=18 shotsDown=2 shotsUp=2
+[2024-04-10 22:42:04] [DEBUG] [GameManager: 57] start level=4
+[2024-04-10 22:42:04] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:42:04] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:42:04] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:42:04] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:42:04] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:42:04] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:42:04] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:42:04] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:42:04] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:42:04] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:42:04] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:42:04] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:42:04] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2964575a
+[2024-04-10 22:42:04] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6bcdd2d0
+[2024-04-10 22:42:04] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6d62b73f
+[2024-04-10 22:42:04] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2964575a
+[2024-04-10 22:42:04] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6bcdd2d0
+[2024-04-10 22:42:04] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6d62b73f
+[2024-04-10 22:42:08] [DEBUG] [GameManager:290] updateGame E_APP_ONELESSLIFE enemies=18 shotsDown=5 shotsUp=5
+[2024-04-10 22:42:09] [DEBUG] [GameManager: 75] sameLevel level=4
+[2024-04-10 22:42:12] [DEBUG] [GameManager:290] updateGame E_APP_ONELESSLIFE enemies=18 shotsDown=4 shotsUp=3
+[2024-04-10 22:42:12] [DEBUG] [GameManager: 75] sameLevel level=4
+[2024-04-10 22:42:16] [DEBUG] [GameManager:288] updateGame E_APP_LOST enemies=18 shotsDown=7 shotsUp=6
+[2024-04-10 22:42:17] [DEBUG] [GameManager: 57] start level=4
+[2024-04-10 22:42:17] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:42:17] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:42:17] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:42:17] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:42:17] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:42:17] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:42:17] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:42:17] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:42:17] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:42:17] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:42:17] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:42:17] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:42:17] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2964575a
+[2024-04-10 22:42:17] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6bcdd2d0
+[2024-04-10 22:42:17] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6d62b73f
+[2024-04-10 22:42:17] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2964575a
+[2024-04-10 22:42:17] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6bcdd2d0
+[2024-04-10 22:42:17] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6d62b73f
+[2024-04-10 22:42:23] [DEBUG] [GameManager:290] updateGame E_APP_ONELESSLIFE enemies=18 shotsDown=4 shotsUp=3
+[2024-04-10 22:42:24] [DEBUG] [GameManager: 75] sameLevel level=4
+[2024-04-10 22:42:29] [DEBUG] [GameManager:290] updateGame E_APP_ONELESSLIFE enemies=16 shotsDown=4 shotsUp=2
+[2024-04-10 22:42:29] [DEBUG] [GameManager: 75] sameLevel level=4
+[2024-04-10 22:43:17] [DEBUG] [GameManager: 67] nextLevel level=5
+[2024-04-10 22:43:19] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:43:19] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:43:20] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:43:20] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:43:21] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:43:23] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:43:23] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:43:24] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2964575a
+[2024-04-10 22:43:24] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6bcdd2d0
+[2024-04-10 22:43:24] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6d62b73f
+[2024-04-10 22:43:27] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2964575a
+[2024-04-10 22:43:27] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6bcdd2d0
+[2024-04-10 22:43:27] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6d62b73f
+[2024-04-10 22:43:30] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:43:30] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:43:31] [DEBUG] [GameManager:288] updateGame E_APP_LOST enemies=3 shotsDown=2 shotsUp=0
+[2024-04-10 22:43:32] [DEBUG] [GameManager: 57] start level=5
+[2024-04-10 22:43:35] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2964575a
+[2024-04-10 22:43:35] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6bcdd2d0
+[2024-04-10 22:43:35] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6d62b73f
+[2024-04-10 22:43:36] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:43:36] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:43:37] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:43:37] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:43:39] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:43:39] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:43:40] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:43:40] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:43:42] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2964575a
+[2024-04-10 22:43:42] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6bcdd2d0
+[2024-04-10 22:43:42] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6d62b73f
+[2024-04-10 22:43:44] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:43:46] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2964575a
+[2024-04-10 22:43:46] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6bcdd2d0
+[2024-04-10 22:43:46] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6d62b73f
+[2024-04-10 22:43:47] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2964575a
+[2024-04-10 22:43:47] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6bcdd2d0
+[2024-04-10 22:43:47] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6d62b73f
+[2024-04-10 22:43:49] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:43:50] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:43:50] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:43:51] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:43:51] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:43:53] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:43:53] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:43:54] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:43:57] [DEBUG] [GameManager:290] updateGame E_APP_ONELESSLIFE enemies=2 shotsDown=4 shotsUp=3
+[2024-04-10 22:43:57] [DEBUG] [GameManager: 75] sameLevel level=5
+[2024-04-10 22:43:57] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:43:59] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:43:59] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:44:00] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 22:44:01] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2964575a
+[2024-04-10 22:44:01] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6bcdd2d0
+[2024-04-10 22:44:01] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6d62b73f
+[2024-04-10 22:44:03] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:44:03] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:44:04] [DEBUG] [GameManager:290] updateGame E_APP_ONELESSLIFE enemies=5 shotsDown=2 shotsUp=0
+[2024-04-10 22:44:05] [DEBUG] [GameManager: 75] sameLevel level=5
+[2024-04-10 22:44:06] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@1d637957
+[2024-04-10 22:44:06] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@28f295d5
+[2024-04-10 22:44:07] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@2964575a
+[2024-04-10 22:44:07] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6bcdd2d0
+[2024-04-10 22:44:07] [DEBUG] [EnemyShipDiagonal: 16] EnemyBig type = javafx.scene.image.Image@6d62b73f
+[2024-04-10 22:44:12] [DEBUG] [GameManager: 67] nextLevel level=6
+[2024-04-10 23:16:26] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 23:16:28] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 23:20:14] [INFO ] [AppInvasoresFx: 56] --------------------------------------------------------------------------------
+[2024-04-10 23:20:15] [DEBUG] [GameManager: 57] start level=1
+[2024-04-10 23:20:23] [DEBUG] [GameManager: 67] nextLevel level=2
+[2024-04-10 23:20:37] [DEBUG] [GameManager: 67] nextLevel level=3
+[2024-04-10 23:20:37] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 23:20:37] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 23:20:37] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 23:20:37] [DEBUG] [EnemyShipDiagonal: 11] EnemyShipDiagonal N=3
+[2024-04-10 23:20:41] [DEBUG] [GameManager:290] updateGame E_APP_ONELESSLIFE enemies=4 shotsDown=7 shotsUp=5
+[2024-04-10 23:20:43] [DEBUG] [GameManager: 75] sameLevel level=3

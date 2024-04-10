@@ -115,6 +115,10 @@ public class GameManager {
 
     public void updateGame(){
 
+        boolean bossDead = false;
+
+
+
         //Detección de colisión entre balas
          for (Iterator<AShot> itShotUp = shotsUp.iterator(); itShotUp.hasNext(); ) {
             AShot AShotUp = itShotUp.next();
@@ -148,7 +152,15 @@ public class GameManager {
 
             for (Iterator<AEnemy> itSprite = enemies.iterator(); itSprite.hasNext();) {
                 ASprite sprite = itSprite.next();
+                if (bossDead){
+
+                    temps.add(new SpriteTemp(temps, sprite.getRect().centerX(), sprite.getRect().centerY(),
+                            EXPLOSION_9_SPRITE_IMAGE, 9));
+                    itSprite.remove();
+                }
+
                 if (AShot.collides(sprite)){
+
 
                     if (sprite instanceof EnemyShipGroup){
                         List<EnemyShip> enemyShipList = ((EnemyShipGroup) sprite).getEnemyList();
@@ -173,10 +185,15 @@ public class GameManager {
                     else if (sprite instanceof EnemyBBB) {
                         if(((IHaveShield) sprite).impact()){
                             temps.add(new SpriteTemp(temps, sprite.getRect().centerX(), sprite.getRect().centerY(),
-                                    EXPLOSION_9_SPRITE_IMAGE, 9));
+                                    EXPLOSION_BOSS_SPRITE_IMAGE, 9));
                             itSprite.remove();
-                            AudioManager.reproducirSonido(enemydedSFX);
+                            AudioManager.reproducirSonido(explosionSFX);
 
+                                bossDead = true;
+
+                        }
+                        else{
+                            AudioManager.reproducirSonido(shieldHitSFX);
                         }
                     }
 

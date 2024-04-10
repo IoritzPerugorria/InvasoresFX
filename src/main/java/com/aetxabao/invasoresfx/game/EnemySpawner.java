@@ -55,24 +55,13 @@ public class EnemySpawner {
             health = 0;
         }
 
-        switch (level){
-            case 1:
-                enemies = crearEnemigosNivelDonut(gameRect);
-                enemies = crearEnemigosNivelBoss(gameRect);
-                break;
-            case 2:
-                enemies = crearEnemigosNivelPaquito(gameRect);
-                break;
-            case 3:
-                enemies = crearEnemigosNivelPulpo(gameRect);
-                break;
-            case 4:
-                enemies = crearEnemigosNivelHoam(gameRect);
-                break;
-            default:
-                enemies = crearEnemigosNivel5(gameRect);
-                break;
-        }
+        enemies = switch (level) {
+            case 1 -> crearEnemigosNivelDonut(gameRect);
+            case 2 -> crearEnemigosNivelPaquito(gameRect);
+            case 3 -> crearEnemigosNivelPulpo(gameRect);
+            case 4 -> crearEnemigosNivelHoam(gameRect);
+            default -> crearEnemigosNivelBoss(gameRect);
+        };
         return enemies;
     }
 
@@ -200,15 +189,25 @@ public class EnemySpawner {
         return enemies;
     }
 
+
+    public  static List<AEnemy> crearEnemigosNivelBoss(Rect gameRect){
+        List<AEnemy> enemies = new ArrayList<>();
+        if (hardmode){
+            health = 50;
+        }
+
+        enemies.add(createEnemyShip(E_BBB, ENEMYSHIP_SPRITE_IMAGE_BOSS,    gameRect, 1, 0, 0, 0, E_SHOT_NOTHING, 3, health + 100));
+
+        health = 3;
+        return enemies;
+    }
+
     public static List<AEnemy> crearEnemigosNiveltest(Rect gameRect) {
         List<AEnemy> enemies = new ArrayList<>();
 
         enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_left,    gameRect, 5, 2, vx, 0, E_SHOT_HEALTH, 1, 0));
         enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_middle,    gameRect, 6, 2, vx, 0, E_SHOT_NOTHING, 1, 0));
         enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_right,    gameRect, 7, 2, vx, 0, E_SHOT_HEALTH, 1, 0));
-
-
-
 
         enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_test1,    gameRect, 5, 8, vx, 0, E_SHOT_NOTHING, 0, 0));
         enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_test2,    gameRect, 6, 8, vx, 3, E_SHOT_NOTHING, 0, 0));
@@ -242,17 +241,5 @@ public class EnemySpawner {
 
         return enemies;
     }
-
-    public  static List<AEnemy> crearEnemigosNivelBoss(Rect gameRect){
-        List<AEnemy> enemies = new ArrayList<>();
-
-
-        enemies.add(createEnemyShip(E_BBB, ENEMYSHIP_SPRITE_IMAGE_BOSS,    gameRect, 1, 0, 0, 0, E_SHOT_NOTHING, 3, health + 20));
-
-        return enemies;
-    }
-
-
-
 
 }

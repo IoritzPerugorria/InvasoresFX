@@ -3,14 +3,17 @@ package com.aetxabao.invasoresfx.sprite;
 import com.aetxabao.invasoresfx.game.GameManager;
 import com.aetxabao.invasoresfx.util.Rect;
 import javafx.scene.image.Image;
+import org.apache.log4j.Logger;
 
 public abstract class EnemyBig extends EnemyShip implements IHaveShield{
 
     int familia;
+    private static Logger log = Logger.getLogger(EnemyShipDiagonal.class);
 
     public EnemyBig(Rect gameRect, Image img, int N, int familia, int health) {
         super(gameRect, img, N, health);
         this.familia = familia;
+        log.debug(STR."EnemyBig type = \{img.toString()}");
     }
 
     public int getFamilia() {
