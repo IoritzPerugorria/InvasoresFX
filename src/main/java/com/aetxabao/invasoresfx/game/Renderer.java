@@ -128,6 +128,7 @@ public class Renderer {
         ay = 0;
         write(x,y,ay, TXT_LEVEL + " " + level,null);
 
+
         pressEnterToContinue();
     }
 
@@ -148,6 +149,7 @@ public class Renderer {
         y = 3.5 * gameManager.getHeight() / 5;
         ay = gameManager.getHeight() / 10;
         write(x,y,ay, TXT_PRESS_ENTER, TXT_TO_CONTINUE);
+
     }
 
 }

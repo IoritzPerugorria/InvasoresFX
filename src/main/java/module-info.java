@@ -2,6 +2,7 @@ module com.aetxabao.invasoresfx {
     requires javafx.controls;
     requires javafx.fxml;
     requires log4j;
+    requires java.desktop;
 
     opens com.aetxabao.invasoresfx to javafx.fxml;
     exports com.aetxabao.invasoresfx;

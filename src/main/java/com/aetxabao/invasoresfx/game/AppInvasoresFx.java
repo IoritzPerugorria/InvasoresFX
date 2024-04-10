@@ -115,9 +115,7 @@ public class AppInvasoresFx extends Application {
 
         renderer = new Renderer(gc, gameManager);
 
-        final long startNanoTime = System.nanoTime();
-
-        deltaTime = startNanoTime;
+        deltaTime = System.nanoTime();
     }
 
     private static void setEventActions(Scene scene){

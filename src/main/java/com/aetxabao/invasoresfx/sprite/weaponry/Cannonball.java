@@ -19,7 +19,7 @@ public abstract class Cannonball extends AShot {
         super(img,ROWS,COLS);
         xSpeed = 0;
         if(hardmode){
-            ySpeed = MAX_SPEED * 2;
+            ySpeed = MAX_SPEED + (MAX_SPEED / 2);
         }
         else{
             ySpeed = MAX_SPEED;

@@ -5,6 +5,7 @@ import javafx.scene.image.Image;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 
+import java.io.File;
 import java.net.URL;
 
 public final class AppConsts {
@@ -39,6 +40,7 @@ public final class AppConsts {
     public static final Image ENEMYSHIP_SPRITE_IMAGE_5_left = new Image(Main.class.getResource("sprite/ei5_left.png").toString());
     public static final Image ENEMYSHIP_SPRITE_IMAGE_5_middle = new Image(Main.class.getResource("sprite/ei5_middle.png").toString());
     public static final Image ENEMYSHIP_SPRITE_IMAGE_5_right = new Image(Main.class.getResource("sprite/ei5_right.png").toString());
+    public static final Image ENEMYSHIP_SPRITE_IMAGE_BOSS = new Image(Main.class.getResource("sprite/boss.png").toString());
 
 
     static final Image ENEMYSHIP_SPRITE_IMAGE_test1 = new Image(Main.class.getResource("sprite/test_grid.png").toString());
@@ -104,6 +106,15 @@ public final class AppConsts {
     public static final int LIFES_COLS = 1;
     public static final double LIFES_ALFA = 0.75;
     //endregion
+
+    static final File shotSFX = new File("C:/Users/iorit/IdeaProjects/InvasoresFX/target/classes/com/aetxabao/invasoresfx/audio/shot.wav");
+    static final File explosionSFX = new File("C:/Users/iorit/IdeaProjects/InvasoresFX/target/classes/com/aetxabao/invasoresfx/audio/deltarune-explosion.wav");
+    static final File clearSFX = new File("C:/Users/iorit/IdeaProjects/InvasoresFX/target/classes/com/aetxabao/invasoresfx/audio/MGClear00.wav");
+    static final File shieldHitSFX = new File("C:/Users/iorit/IdeaProjects/InvasoresFX/target/classes/com/aetxabao/invasoresfx/audio/impact.wav");
+    static final File enemydedSFX = new File("C:/Users/iorit/IdeaProjects/InvasoresFX/target/classes/com/aetxabao/invasoresfx/audio/enemyDed.wav");
+
+
+
 
     private AppConsts() { }
 

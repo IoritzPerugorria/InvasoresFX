@@ -9,6 +9,7 @@ import com.aetxabao.invasoresfx.sprite.weaponry.AShot;
 import com.aetxabao.invasoresfx.sprite.weaponry.Laserbeam;
 import com.aetxabao.invasoresfx.util.Rect;
 
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -109,6 +110,7 @@ public class GameManager {
         AShot shot = new Laserbeam(LASER_SPRITE_IMAGE);
         shot.setPos(ship.getRect().centerX(), ship.getRect().top - shot.getRect().height());
         shotsUp.add(shot);
+        AudioManager.reproducirSonido(shotSFX);
     }
 
     public void updateGame(){
@@ -133,8 +135,7 @@ public class GameManager {
                                 EXPLOSION_12_SPRITE_IMAGE, 12));
                         itShotDown.remove();
                     }
-                    temps.add(new SpriteTemp(temps, AShotDown.getRect().centerX(), AShotDown.getRect().centerY(),
-                            EXPLOSION_12_SPRITE_IMAGE, 12));
+
 
                     break;
                 }
@@ -157,6 +158,7 @@ public class GameManager {
                                 temps.add(new SpriteTemp(temps, enemyShip.getRect().centerX(), enemyShip.getRect().centerY(),
                                                          EXPLOSION_9_SPRITE_IMAGE, 9));
                                 itEnemy.remove();
+                                AudioManager.reproducirSonido(enemydedSFX);
                                 if (enemyShipList.isEmpty()){
                                     itSprite.remove();
                                 }else{
@@ -168,38 +170,61 @@ public class GameManager {
                             }
                         }
                     }
+                    else if (sprite instanceof EnemyBBB) {
+                        if(((IHaveShield) sprite).impact()){
+                            temps.add(new SpriteTemp(temps, sprite.getRect().centerX(), sprite.getRect().centerY(),
+                                    EXPLOSION_9_SPRITE_IMAGE, 9));
+                            itSprite.remove();
+                            AudioManager.reproducirSonido(enemydedSFX);
+
+                        }
+                    }
+
+
+                    else if (sprite instanceof EnemyBig){
+                        if(((IHaveShield) sprite).impact()) {
+
+                            int familia = ((EnemyBig) sprite).getFamilia();
+
+                            for (Iterator<AEnemy> familiares = enemies.iterator(); familiares.hasNext(); ) {
+                                ASprite spriteFamiliar = familiares.next();
+
+                                if (spriteFamiliar instanceof EnemyBig) {
+
+                                    int familia2 = ((EnemyBig) spriteFamiliar).getFamilia();
+
+                                    if (familia == familia2) {
+                                        temps.add(new SpriteTemp(temps, spriteFamiliar.getRect().centerX(), spriteFamiliar.getRect().centerY(),
+                                                EXPLOSION_9_SPRITE_IMAGE, 9));
+                                        familiares.remove();
+                                        AudioManager.reproducirSonido(enemydedSFX);
+
+                                    }
+                                }
+                            }
+                        }
+                        else{
+                            AudioManager.reproducirSonido(shieldHitSFX);
+                        }
+                    }
 
                     else if (sprite instanceof IHaveShield){
                         if(((IHaveShield) sprite).impact()){
                             temps.add(new SpriteTemp(temps, sprite.getRect().centerX(), sprite.getRect().centerY(),
-                                EXPLOSION_9_SPRITE_IMAGE, 9));
+                                    EXPLOSION_9_SPRITE_IMAGE, 9));
                             itSprite.remove();
+                            AudioManager.reproducirSonido(enemydedSFX);
+                        }
+                        else{
+                            AudioManager.reproducirSonido(shieldHitSFX);
                         }
                     }
 
                     else{
                         temps.add(new SpriteTemp(temps, sprite.getRect().centerX(), sprite.getRect().centerY(),
-                                                 EXPLOSION_9_SPRITE_IMAGE, 9));
+                                EXPLOSION_9_SPRITE_IMAGE, 9));
                         itSprite.remove();
-                    }
-
-                    if (sprite instanceof EnemyBig){
-                        int familia = ((EnemyBig) sprite).getFamilia();
-
-                        for (Iterator<AEnemy> familiares = enemies.iterator(); familiares.hasNext(); ) {
-                            ASprite spriteFamiliar = familiares.next();
-
-                            if (spriteFamiliar instanceof EnemyBig){
-
-                                int familia2 = ((EnemyBig) spriteFamiliar).getFamilia();
-
-                                    if(familia == familia2) {
-                                        temps.add(new SpriteTemp(temps, spriteFamiliar.getRect().centerX(), spriteFamiliar.getRect().centerY(),
-                                                EXPLOSION_9_SPRITE_IMAGE, 9));
-                                        familiares.remove();
-                                    }
-                            }
-                        }
+                        AudioManager.reproducirSonido(enemydedSFX);
                     }
                     score += PTS_ENEMYSHIP;
                     itBullet.remove();
@@ -219,6 +244,7 @@ public class GameManager {
         }
         else{
             AppInvasoresFx.shotPressed.set(false);
+            AudioManager.reproducirSonido(explosionSFX);
         }
         //Actualización de los sprites temporales
         for (int i=temps.size()-1;i>=0;i--) {
@@ -250,6 +276,7 @@ public class GameManager {
         }
         //Comprobación del estado de la partida
         if ((enemies.isEmpty())&&(temps.isEmpty())){
+            AudioManager.reproducirSonido(clearSFX);
             appStatus.newLevel();
             score += PTS_NEWLEVEL;
             return;

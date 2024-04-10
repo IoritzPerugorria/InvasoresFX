@@ -58,6 +58,7 @@ public class EnemySpawner {
         switch (level){
             case 1:
                 enemies = crearEnemigosNivelDonut(gameRect);
+                enemies = crearEnemigosNivelBoss(gameRect);
                 break;
             case 2:
                 enemies = crearEnemigosNivelPaquito(gameRect);
@@ -90,7 +91,10 @@ public class EnemySpawner {
                 e = new EnemyShipDiagonal(gameRect, enemyImage, TICKSxFRAME, health);
                 break;
             case E_BIG:
-                e = new EnemyBig(gameRect, enemyImage, TICKSxFRAME, familia, health);
+                e = new EnemyBigRaw(gameRect, enemyImage, TICKSxFRAME, familia, health);
+                break;
+            case E_BBB:
+                e = new EnemyBBB(gameRect, enemyImage, TICKSxFRAME * 2, health);
                 break;
             case E_NORMAL:
             default:
@@ -165,24 +169,32 @@ public class EnemySpawner {
     }
 
     public static List<AEnemy> crearEnemigosNivelHoam(Rect gameRect) {
+        health = health + 2;
         List<AEnemy> enemies = new ArrayList<>();
 
-        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_top,    gameRect, 11, 2, vx , 0, E_SHOT_HOAMING, 0, health));
-        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_bottom, gameRect, 11, 3, vx, 3, E_SHOT_HOAMING, 0, health));
-        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_top,    gameRect, 5, 2, vx, 0, E_SHOT_HOAMING, 1, health));
-        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_bottom, gameRect, 5, 3, vx, 3, E_SHOT_HOAMING, 1, health));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_top,    gameRect, 14, 4, -vx , 0, E_SHOT_HOAMING, 0, health));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_bottom, gameRect, 14, 5, -vx, 3, E_SHOT_HOAMING, 0, health));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_top,    gameRect, 6, 1, vx, 0, E_SHOT_HOAMING, 1, health));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_bottom, gameRect, 6, 2, vx, 3, E_SHOT_HOAMING, 1, health));
 
-        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_top,    gameRect, 14, 5, vx, 0, E_SHOT_HOAMING, 2, health));
-        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_bottom, gameRect, 14, 6, vx, 3, E_SHOT_HOAMING, 2, health));
-        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_top,    gameRect, 2, 5, vx, 0, E_SHOT_HOAMING, 3, health));
-        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_bottom, gameRect, 2, 6, vx, 3, E_SHOT_HOAMING, 3, health));
-        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_top,    gameRect, 8, 5, vx, 0, E_SHOT_HOAMING, 4, health));
-        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_bottom, gameRect, 8, 6, vx, 3, E_SHOT_HOAMING, 4, health));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_top,    gameRect, 18, 10, -vx, 0, E_SHOT_HOAMING, 2, health));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_bottom, gameRect, 18, 11, -vx, 3, E_SHOT_HOAMING, 2, health));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_top,    gameRect, 2, 7, vx, 0, E_SHOT_HOAMING, 3, health));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_bottom, gameRect, 2, 8, vx, 3, E_SHOT_HOAMING, 3, health));
 
-        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_top,    gameRect, 5, 8, vx, 0, E_SHOT_HOAMING, 5, health));
-        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_bottom, gameRect, 5, 9, vx, 3, E_SHOT_HOAMING, 5, health));
-        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_top,    gameRect, 11, 8, vx, 0, E_SHOT_HOAMING, 6, health));
-        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_bottom, gameRect, 11, 9, vx, 3, E_SHOT_HOAMING, 6, health));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_top,    gameRect, 6, 13, vx, 0, E_SHOT_HOAMING, 5, health));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_bottom, gameRect, 6, 14, vx, 3, E_SHOT_HOAMING, 5, health));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_top,    gameRect, 14, 16, -vx, 0, E_SHOT_HOAMING, 6, health));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_4_bottom, gameRect, 14, 17, -vx, 3, E_SHOT_HOAMING, 6, health));
+
+
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_left,    gameRect, 2, 0, -vx, 0, E_SHOT_HEALTH, 7, health));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_middle,    gameRect, 3, 0, -vx, 0, E_SHOT_NOTHING, 7, health));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_right,    gameRect, 4, 0, -vx, 0, E_SHOT_HEALTH, 7, health));
+
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_left,    gameRect, 15, 0, vx, 0, E_SHOT_HEALTH, 8, health));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_middle,    gameRect, 16, 0, vx, 0, E_SHOT_NOTHING, 8, health));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_right,    gameRect, 17, 0, vx, 0, E_SHOT_HEALTH, 8, health));
 
 
         return enemies;
@@ -218,7 +230,7 @@ public class EnemySpawner {
 
         enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_left,    gameRect, 2, 2, vx, 0, E_SHOT_HEALTH, 1, health));
         enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_middle,    gameRect, 3, 2, vx, 0, E_SHOT_NOTHING, 1, health));
-        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_right,    gameRect, 3, 2, vx, 0, E_SHOT_HEALTH, 1, health));
+        enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_right,    gameRect, 4, 2, vx, 0, E_SHOT_HEALTH, 1, health));
 
         enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_left,    gameRect, 8, 2, vx, 0, E_SHOT_HEALTH, 2, health));
         enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_middle,    gameRect, 9, 2, vx, 0, E_SHOT_NOTHING, 2, health));
@@ -227,6 +239,15 @@ public class EnemySpawner {
         enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_left,    gameRect, 5, 5, vx, 0, E_SHOT_HEALTH, 3, health));
         enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_middle,    gameRect, 6, 5, vx, 0, E_SHOT_NOTHING, 3, health));
         enemies.add(createEnemyShip(E_BIG, ENEMYSHIP_SPRITE_IMAGE_5_right,    gameRect, 7, 5, vx, 0, E_SHOT_HEALTH, 3, health));
+
+        return enemies;
+    }
+
+    public  static List<AEnemy> crearEnemigosNivelBoss(Rect gameRect){
+        List<AEnemy> enemies = new ArrayList<>();
+
+
+        enemies.add(createEnemyShip(E_BBB, ENEMYSHIP_SPRITE_IMAGE_BOSS,    gameRect, 1, 0, 0, 0, E_SHOT_NOTHING, 3, health + 20));
 
         return enemies;
     }
